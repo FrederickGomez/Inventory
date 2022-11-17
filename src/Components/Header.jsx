@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
+// import styled from 'styled-component';
 
 function Header() {
   
@@ -11,10 +12,10 @@ function Header() {
         <div className="logo">Inventario Operaciones</div>
         <div className="header-right">
             <Link to="/">
-                <p className={`${activeTab === "Home"}`? "active" : ""} onClick={setActiveTab("Home")}>Home</p>
+                <p className={`${activeTab === "Home" ? "active" : ""}`} onClick={()=> setActiveTab("Home")}>Home</p>
             </Link>
             <Link to="/add">
-                <p className={`${activeTab === "AddProduct"}`? "active" : ""} onClick={setActiveTab("AddProduct")}>Agregar Producto</p>
+                <p className={`${activeTab === "AddProduct" ? "active" : ""}`} onClick={()=> setActiveTab("AddProduct")}>Agregar Producto</p>
             </Link>
         </div> 
     </div>

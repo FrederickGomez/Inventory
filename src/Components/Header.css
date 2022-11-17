@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 20px;
+    min-width: 100vh;
+    padding: 20px;
+    background-color: #29BBEC;
+    color: white;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header-right {
+    display: flex;
+    min-width: 20vw;
+    gap: 20px;
+}
+
+.header-right p{
+    text-decoration: none;
+    color: white;
+}
+
+.header-right p.active{
+    translate: 0px -3px;
+}
+
+.header-right p:hover{
+    color: #0072c6;
+}
