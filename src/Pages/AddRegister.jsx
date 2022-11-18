@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import fireDb from "../firebase";
-import "./AddEdit.css";
+import "./AddRegister.css";
 
 const initialState = {
   product: "",
@@ -9,7 +9,7 @@ const initialState = {
   amount: "",
 };
 
-function AddEdit() {
+function AddRegister() {
   const [state, setState] = useState(initialState);
   const [data, setData] = useState({});
 
@@ -54,7 +54,7 @@ function AddEdit() {
           type="text"
           id="product"
           name="product"
-          placeholder="Nombre del Producto"
+          placeholder="Nombre del Material"
           value={product}
           onChange={handleInputChange}
         />
@@ -63,7 +63,7 @@ function AddEdit() {
           type="text"
           id="unit"
           name="unit"
-          placeholder="Unidad del material"
+          placeholder="Unidad del Material"
           value={unit}
           onChange={handleInputChange}
         />
@@ -83,4 +83,4 @@ function AddEdit() {
   );
 }
 
-export default AddEdit;
+export default AddRegister;
